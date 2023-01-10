@@ -1,3 +1,102 @@
-body {
+* {
   background: papayawhip;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.a {
+  order: 1;
+  border: solid 1px;
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+}
+
+.b {
+  order: 2;
+  border: solid 1px;
+  width: 100%;
+  height: 300px;
+  margin: 10px;
+}
+
+.c {
+  order: 3;
+  border: solid 1px;
+  width: 30%;
+  height: 100px;
+  margin: 10px;
+}
+
+.d {
+  order: 4;
+  border: solid 1px;
+  width: 30%;
+  height: 100px;
+  margin: 10px;
+}
+
+.e {
+  order: 5;
+  border: solid 1px;
+  width: 30%;
+  height: 100px;
+  margin: 10px;
+} 
+
+.f {
+  order: 6;
+  border: solid 1px;
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    justify-content: flex-start;
+  }
+  
+  .a {
+    order: 1;
+    height: 300px;
+  }
+
+  .b {
+    order: 2;
+    width: 75%;
+    height: 300px;
+  }
+
+  .c {
+    transform: translateY(-305px);
+    order: 3;
+    width: 23.5%;
+    height: 285px;
+  }
+
+  .d {
+    transform: translateY(-305px);
+    order: 3;
+    width: 23.5%;
+    height: 285px;
+
+  }
+
+  .e {
+    transform: translateY(-305px);
+    order: 3;
+    width: 23.5%;
+    height: 285px;
+  }
+
+  .f {
+    order: 2;
+    width: 20%;
+    height: 600px;
+  }
 }
